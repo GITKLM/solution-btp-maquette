@@ -1,6 +1,7 @@
 import Bounded from "@/components/Bounded";
 import { ButtonContact } from "@/components/ButtonContact";
-import Carousel from "@/components/Carousel";
+import Carousel from "@/components/home/Carousel";
+import Hero from "@/components/home/Hero";
 import Info from "@/components/header/Info";
 import Logo from "@/components/header/Logo";
 import { MenuNav } from "@/components/header/MenuNav";
@@ -12,7 +13,8 @@ export default function Home() {
     <main>
 <div >
 <NavBar />
-<Carousel/>
+<Hero />
+
 
 </div>
 

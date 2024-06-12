@@ -17,40 +17,17 @@ import {
 
 const components: { title: string; href: string; description: string }[] = [
   {
-    title: "Toiture",
+    title: "Travaux après sinistre",
     href: "/docs/primitives/alert-dialog",
     description:
       "A modal dialog that interrupts the user with important content and expects a response.",
   },
   {
-    title: "Hover Card",
+    title: "Ravalement de façade",
     href: "/docs/primitives/hover-card",
     description:
       "For sighted users to preview content available behind a link.",
   },
-  {
-    title: "Progress",
-    href: "/docs/primitives/progress",
-    description:
-      "Displays an indicator showing the completion progress of a task, typically displayed as a progress bar.",
-  },
-  // {
-  //   title: "Scroll-area",
-  //   href: "/docs/primitives/scroll-area",
-  //   description: "Visually or semantically separates content.",
-  // },
-  // {
-  //   title: "Tabs",
-  //   href: "/docs/primitives/tabs",
-  //   description:
-  //     "A set of layered sections of content—known as tab panels—that are displayed one at a time.",
-  // },
-  // {
-  //   title: "Tooltip",
-  //   href: "/docs/primitives/tooltip",
-  //   description:
-  //     "A popup that displays information related to an element when the element receives keyboard focus or the mouse hovers over it.",
-  // },
 ]
 
 export function MenuNav() {
@@ -64,29 +41,27 @@ export function MenuNav() {
               <li className="row-span-3">
                 <NavigationMenuLink asChild>
                   <a
-                    className="flex h-full w-full select-none flex-col justify-end rounded-md bg-gradient-to-b from-muted/50 to-muted p-6 no-underline outline-none focus:shadow-md"
+                    className="flex h-full w-full select-none flex-col justify-end rounded-md bg-[#76a04219] from-muted/50 to-muted p-6 no-underline outline-none focus:shadow-md"
                     href="/"
                   >
                     {/* <Icons.logo className="h-6 w-6" /> */}
                     <div className="mb-2 mt-4 text-lg font-medium">
-                      Expert recherche de fuite
+                      Expert en recherche de fuite
                     </div>
                     <p className="text-sm leading-tight text-muted-foreground">
-                      Beautifully designed components that you can copy and
-                      paste into your apps. Accessible. Customizable. Open
-                      Source.
+                    Traces d&apos;infiltrations d&apos;eau sur le plafond, peinture qui cloque sur les murs, consommation d&apos;eau qui explose ou dégâts des eaux ?
                     </p>
                   </a>
                 </NavigationMenuLink>
               </li>
               <ListItem href="/docs" title="Après Compteur">
-                Re-usable components built using Radix UI and Tailwind CSS.
+              Surconsommation d&apos;eau? Compteur tourne tout le temps?
               </ListItem>
               <ListItem href="/docs/installation" title="Dégats des eaux">
-                How to install dependencies and structure your app.
+              Identifier l&apos;origine du problème ?
               </ListItem>
               <ListItem href="/docs/primitives/typography" title="Toit">
-                Styles for headings, paragraphs, lists...etc
+               Des infiltration d&apos;eau sur votre toiture-terasse?
               </ListItem>
             </ul>
           </NavigationMenuContent>
@@ -98,7 +73,7 @@ export function MenuNav() {
               <li className="row-span-3">
                 <NavigationMenuLink asChild>
                   <a
-                    className="flex h-full w-full select-none flex-col justify-end rounded-md bg-gradient-to-b from-muted/50 to-muted p-6 no-underline outline-none focus:shadow-md"
+                    className="flex h-full w-full select-none flex-col justify-end rounded-md bg-[#76a04219] from-muted/50 to-muted p-6 no-underline outline-none focus:shadow-md"
                     href="/"
                   >
                     {/* <Icons.logo className="h-6 w-6" /> */}
@@ -170,7 +145,7 @@ const ListItem = React.forwardRef<
         <a
           ref={ref}
           className={cn(
-            "block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground",
+            "block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-[#76a04219] hover:text-accent-foreground focus:bg-[#76a04219] focus:text-accent-foreground",
             className
           )}
           {...props}

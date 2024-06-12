@@ -6,6 +6,7 @@ import clsx from "clsx";
 import Logo from "./Logo";
 import { ButtonContact } from "../ButtonContact";
 import { MenuNav } from "./MenuNav";
+import { Button } from "../ui/button";
 
 export default function NavBar() {
   
@@ -45,27 +46,50 @@ export default function NavBar() {
           </button>
         </div>
 
-
-        {/* Mobile Nav */}
-        {/* <div
+{/* Mobile Nav */}
+<div
           className={clsx(
-            "gap-4 fixed bottom-0 left-0 right-0 top-0 z-40 flex flex-col items-end bg-[#070815] pr-4 pt-14 transition-transform duration-300 ease-in-out motion-reduce:transition-none md:hidden",
+            "gap-4 fixed bottom-0 left-0 right-0 top-0 z-40 flex flex-col items-end  bg-white pr-4 pt-14 transition-transform duration-300 ease-in-out motion-reduce:transition-none md:hidden",
             open ? "translate-x-0" : "translate-x-[100%]",
           )}
         >
           <button
             type="button"
-            className="fixed right-4 top-4 mb-4 block p-2 text-3xl text-white md:hidden"
+            className="fixed right-4 top-7 mb-4 block p-2 text-3xl md:hidden"
             aria-expanded={open}
             onClick={() => setOpen(false)}
           >
             <MdClose />
             <span className="sr-only">Close menu</span>
           </button>
-          <MenuNav />
-            <ButtonContact />
-        </div> */}
-
+            <ul className="grid justify-items-end gap-8 pt-14 text-xl">
+            <li>
+             <a href="/" className="">Recherche de fuite</a>
+              </li>
+            <li>
+             <a href="/" className="">Travaux toiture</a>
+              </li>
+            <li>
+             <a href="/" className="">Travaux Après Sinistre</a>
+              </li>
+            <li>
+             <a href="/" className="">Ravalement de façade</a>
+              </li>
+            <li>
+             <a href="/" className="">À Propos</a>
+              </li>
+            <li>
+             <a href="/" className="">Contact</a>
+              </li>
+            <li className="pt-2 first:mt-8" onClick={() => setOpen(false)}>
+              <Button
+              >
+                Devis gratuit
+              </Button>
+            </li>
+                </ul> 
+         
+        </div>
 
         {/* Desktop Nav */}
         <div className="hidden md:flex md:gap-6 items-center">
