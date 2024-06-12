@@ -1,23 +1,17 @@
-import Bounded from "@/components/Bounded";
-import { ButtonContact } from "@/components/ButtonContact";
-import Carousel from "@/components/home/Carousel";
+import Contact from "@/components/home/Contact";
+import Deplacement from "@/components/home/Deplacement";
+import Expertise from "@/components/home/Expertise";
 import Hero from "@/components/home/Hero";
-import Info from "@/components/header/Info";
-import Logo from "@/components/header/Logo";
-import { MenuNav } from "@/components/header/MenuNav";
-import NavBar from "@/components/header/NavBar";
-
 
 export default function Home() {
   return (
     <main>
 <div >
-<NavBar />
 <Hero />
-
-
+<Expertise />
+<Deplacement/>
+<Contact />
 </div>
-
     </main>
   );
 }

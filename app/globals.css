@@ -75,11 +75,11 @@
       
     }
   }
-.bg-drops{
-        background: url('/Bg.svg');
-  background-size: cover; /* ou 'contain', 'repeat', selon ton besoin */
-  background-position: center;
-  background-attachment: fixed;
+.bg-test{
+        /* background: url('/test.png'); */
+        background-size:contain;
+        background-position: center;
+        background-attachment: fixed;
 }
 
   .glass-container {
@@ -87,7 +87,7 @@
   }
   
   .glass-container::before {
-    @apply absolute -inset-[10px] -z-10 rounded-xl border border-slate-100/20 bg-slate-200/20 backdrop-blur-md;
+    @apply absolute -inset-[10px] -z-10 rounded-xl border border-slate-100/20 bg-slate-200/10 backdrop-blur-md;
     content: "";
   }
 

@@ -2,7 +2,6 @@
 import { useState, useEffect } from 'react';
 import Image from 'next/image';
 import { RiArrowDropLeftLine, RiArrowDropRightLine } from "react-icons/ri";
-import { Button } from '../ui/button';
 
 const Carousel = () => {
   const [currentSlide, setCurrentSlide] = useState(0);

@@ -1,4 +1,3 @@
-import React from 'react'
 import { Button } from '../ui/button'
 import Bounded from '../Bounded'
 import Carousel from './Carousel'
@@ -12,9 +11,8 @@ import { ImHappy } from "react-icons/im";
 export default function Hero() {
   return (
         <>
-<Bounded className='bg-[#76A042] bg-opacity-10'>
-<div className="flex flex-col lg:flex-row gap-10 pb-2">
-
+<Bounded className='bg-[#76A042]/10'>
+<div className="flex flex-col lg:flex-row gap-10 pb-2 mt-16">
       <div className="flex flex-col gap-2">
     <p className="text-sm text-[#76A042]">Notre expertise</p>
     <h1 className="text-7xl font-bold">
@@ -34,8 +32,6 @@ export default function Hero() {
       </div>
     </div>
     </div>
-
- 
   </div>
 
   <Carousel />

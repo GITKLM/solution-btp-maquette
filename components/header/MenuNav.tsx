@@ -42,7 +42,7 @@ export function MenuNav() {
                 <NavigationMenuLink asChild>
                   <a
                     className="flex h-full w-full select-none flex-col justify-end rounded-md bg-[#76a04219] from-muted/50 to-muted p-6 no-underline outline-none focus:shadow-md"
-                    href="/"
+                    href="/recherche-fuite"
                   >
                     {/* <Icons.logo className="h-6 w-6" /> */}
                     <div className="mb-2 mt-4 text-lg font-medium">
@@ -54,13 +54,13 @@ export function MenuNav() {
                   </a>
                 </NavigationMenuLink>
               </li>
-              <ListItem href="/docs" title="Après Compteur">
+              <ListItem href="/recherche-fuite/compteur" title="Après Compteur">
               Surconsommation d&apos;eau? Compteur tourne tout le temps?
               </ListItem>
-              <ListItem href="/docs/installation" title="Dégats des eaux">
+              <ListItem href="/recherche-fuite/degats-des-eaux" title="Dégats des eaux">
               Identifier l&apos;origine du problème ?
               </ListItem>
-              <ListItem href="/docs/primitives/typography" title="Toit">
+              <ListItem href="/recherche-fuite/toiture" title="Toit">
                Des infiltration d&apos;eau sur votre toiture-terasse?
               </ListItem>
             </ul>
