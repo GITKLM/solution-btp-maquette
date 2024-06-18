@@ -1,5 +1,8 @@
 import { Button } from "@/components/ui/button"
+import Link from "next/link"
 
 export function ButtonContact() {
-  return <Button className="justify-center my-4"> Devis gratuit</Button>
+  return <Link className="justify-center my-4" href="/contact">
+<Button>Contactez-nous</Button>
+    </Link>
 }

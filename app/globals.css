@@ -75,20 +75,30 @@
       
     }
   }
+
+
+  /* test */
+  @layer utilities {
+    .custom-outline:focus {
+      @apply outline-none border-blue-500;
+      outline: 2px solid #76A042; /* Changez la couleur de l'outline ici */
+    }
+  }
+  
 .bg-test{
-        /* background: url('/test.png'); */
-        background-size:contain;
+        background: url('/bg-test.jpg');
+        background-size:cover;
         background-position: center;
         background-attachment: fixed;
 }
 
-  .glass-container {
-    position: relative;
-  }
-  
-  .glass-container::before {
-    @apply absolute -inset-[10px] -z-10 rounded-xl border border-slate-100/20 bg-slate-200/10 backdrop-blur-md;
-    content: "";
-  }
+.glass-container {
+  position: relative;
+}
+
+.glass-container::before {
+  @apply absolute -inset-[10px] -z-10 rounded-xl border border-slate-200/10 bg-slate-300/20 backdrop-blur-md;
+  content: "";
+}
 
   

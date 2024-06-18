@@ -18,15 +18,15 @@ import {
 const components: { title: string; href: string; description: string }[] = [
   {
     title: "Travaux après sinistre",
-    href: "/docs/primitives/alert-dialog",
+    href: "/autres-travaux/apres-sinistre",
     description:
-      "A modal dialog that interrupts the user with important content and expects a response.",
+      "Rénovation complète, remise en état, intervention rapide",
   },
   {
     title: "Ravalement de façade",
-    href: "/docs/primitives/hover-card",
+    href: "/autres-travaux/ravalement-facade",
     description:
-      "For sighted users to preview content available behind a link.",
+      "Ravalement, peinture, rattrapage et traitement des microfissures",
   },
 ]
 
@@ -74,34 +74,31 @@ export function MenuNav() {
                 <NavigationMenuLink asChild>
                   <a
                     className="flex h-full w-full select-none flex-col justify-end rounded-md bg-[#76a04219] from-muted/50 to-muted p-6 no-underline outline-none focus:shadow-md"
-                    href="/"
+                    href="/travaux-toiture"
                   >
                     {/* <Icons.logo className="h-6 w-6" /> */}
                     <div className="mb-2 mt-4 text-lg font-medium">
-                      Expert recherche de fuite
+                      Expert en travaux de toit-terrasse
                     </div>
                     <p className="text-sm leading-tight text-muted-foreground">
-                      Beautifully designed components that you can copy and
-                      paste into your apps. Accessible. Customizable. Open
-                      Source.
+                     Nous sommes également spécialisés dans la recherche de problème concernant les toits-terrasses et la mise en place de solutions durables
                     </p>
                   </a>
                 </NavigationMenuLink>
               </li>
-              <ListItem href="/docs" title="Après Compteur">
-                Re-usable components built using Radix UI and Tailwind CSS.
+              <ListItem href="/travaux-toiture/etencheite" title="Etenchéité">
+Application d&apos;une peinture impérméable, préserve la qualité
               </ListItem>
-              <ListItem href="/docs/installation" title="Dégats des eaux">
-                How to install dependencies and structure your app.
-              </ListItem>
-              <ListItem href="/docs/primitives/typography" title="Toit">
-                Styles for headings, paragraphs, lists...etc
+              <ListItem href="/travaux-toiture/peinture" title="Peinture">
+Restaurer durablement la beauté de votre toiture              </ListItem>
+              <ListItem href="/travaux-toiture/nettoyage" title="Nettoyage">
+               Entretien rapide et efficace de vos toits
               </ListItem>
             </ul>
           </NavigationMenuContent>
         </NavigationMenuItem>
         <NavigationMenuItem>
-          <NavigationMenuTrigger>Expertise</NavigationMenuTrigger>
+          <NavigationMenuTrigger>Autres travaux</NavigationMenuTrigger>
           <NavigationMenuContent>
             <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px] ">
               {components.map((component) => (
@@ -117,19 +114,19 @@ export function MenuNav() {
           </NavigationMenuContent>
         </NavigationMenuItem>
         <NavigationMenuItem>
-          <Link href="/docs" legacyBehavior passHref>
+          <Link href="/apropos" legacyBehavior passHref>
             <NavigationMenuLink className={navigationMenuTriggerStyle()}>
               À Propos
             </NavigationMenuLink>
           </Link>
         </NavigationMenuItem>
-        <NavigationMenuItem>
+        {/* <NavigationMenuItem>
           <Link href="/docs" legacyBehavior passHref>
             <NavigationMenuLink className={navigationMenuTriggerStyle()}>
               Contact
             </NavigationMenuLink>
           </Link>
-        </NavigationMenuItem>
+        </NavigationMenuItem> */}
       </NavigationMenuList>
     </NavigationMenu>
   )

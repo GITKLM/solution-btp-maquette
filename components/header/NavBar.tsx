@@ -64,27 +64,26 @@ export default function NavBar() {
           </button>
             <ul className="grid justify-items-end gap-8 pt-14 text-xl">
             <li>
-             <a href="/" className="">Recherche de fuite</a>
+             <a href="/recherche-fuite" className="">Recherche de fuite</a>
               </li>
             <li>
-             <a href="/" className="">Travaux toiture</a>
+             <a href="/travaux-toiture" className="">Travaux toiture</a>
               </li>
             <li>
-             <a href="/" className="">Travaux Après Sinistre</a>
+             <a href="/autres-travaux/apres-sinistre" className="">Travaux Après Sinistre</a>
               </li>
             <li>
-             <a href="/" className="">Ravalement de façade</a>
+             <a href="/autres-travaux/ravalement-facade" className="">Ravalement de façade</a>
               </li>
             <li>
-             <a href="/" className="">À Propos</a>
-              </li>
-            <li>
-             <a href="/" className="">Contact</a>
+             <a href="/apropos" className="">À Propos</a>
               </li>
             <li className="pt-2 first:mt-8" onClick={() => setOpen(false)}>
               <Button
+              
               >
-                Devis gratuit
+                 <a href="/contact" className="">Devis gratuit</a>
+              
               </Button>
             </li>
                 </ul> 
@@ -95,7 +94,8 @@ export default function NavBar() {
         <div className="hidden md:flex md:gap-6 items-center">
 
         <MenuNav />
-            <ButtonContact />
+            <ButtonContact 
+            />
         </div>
         
         </div>

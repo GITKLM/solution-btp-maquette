@@ -16,7 +16,7 @@ export default function Hero() {
       <div className="flex flex-col gap-2">
     <p className="text-sm text-[#76A042]">Notre expertise</p>
     <h1 className="text-7xl font-bold">
-      Nous avons <span className="text-[#76A042]">la solution</span>
+      Nous avons <span className="bg-gradient-to-b from-[#76A042] to-[#76A042]/60 bg-clip-text not-italic text-transparent">la solution</span>
     </h1>
     <p className="max-w-[33rem] pb-2">
       Une recherche de fuite ? Une surconsommation d&apos;eau ? Des travaux après sinistre ? Étanchéité, peinture, nettoyage de la toiture ? Nous nous déplaçons rapidement dans l&apos;ouest et le sud de la Réunion. Entreprise agréée par les Assurances
@@ -36,7 +36,6 @@ export default function Hero() {
 
   <Carousel />
 </div>
-
 <div className="px-2 py-2 mt-4 flex justify-between gap-6 text-xs md:text-lg font-bold">
       <div className="flex flex-col items-center gap-3">
         <GiReceiveMoney className="text-4xl" />
@@ -52,11 +51,11 @@ export default function Hero() {
       </div>
       <div className="flex flex-col items-center gap-3">
         <FaTruckDroplet className="text-4xl" />
-        <p className="text-center">Intervention rapide sud et l&apos;ouest</p>
+        <p className="text-center">Intervention express</p>
       </div>
       <div className="flex flex-col items-center gap-3">
         <FaRegThumbsUp className="text-4xl" />
-        <p className="text-center">X années de savoir-faire</p>
+        <p className="text-center">Garantie décennale</p>
       </div>
     </div>
 </Bounded>

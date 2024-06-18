@@ -39,7 +39,10 @@ export default function RechercheFuiteCards() {
 
      <div className='flex flex-col'>
       <div className="w-fit rounded-lg bg-gray-500/10 p-4 text-xl lg:text-3xl">
-      <LogoSansTitre />
+      <LogoSansTitre
+            width={40}
+            height={40}
+      />
       </div>
       <div className="mt-6 text-2xl font-normal">
       <p>Modalités de subvention</p>
@@ -51,7 +54,7 @@ export default function RechercheFuiteCards() {
       <p>50 % des dépenses éligibles et 2 000 euros de subvention maximum.</p>
       </div>
 <div className='text-center py-6'>
-      <Button/>
+<Button>Plus d&apos;information</Button>
 
 </div>
       </div> 
@@ -76,7 +79,10 @@ export default function RechercheFuiteCards() {
 
      <div className='flex flex-col'>
       <div className="w-fit rounded-lg bg-gray-500/10 p-4 text-xl lg:text-3xl">
-      <LogoSansTitre />
+      <LogoSansTitre
+            width={40}
+            height={40}
+      />
       </div>
       <div className="mt-6 text-2xl font-normal">
       <p>Modalités de subvention</p>
@@ -88,7 +94,8 @@ export default function RechercheFuiteCards() {
       <p>50 % des dépenses éligibles et 2 000 euros de subvention maximum.</p>
       </div>
 <div className='text-center py-6'>
-      <Button/>
+<Button>Plus d&apos;information</Button>
+
 
 </div>
       </div> 
@@ -113,7 +120,10 @@ export default function RechercheFuiteCards() {
 
      <div className='flex flex-col'>
       <div className="w-fit rounded-lg bg-gray-500/10 p-4 text-xl lg:text-3xl">
-      <LogoSansTitre />
+      <LogoSansTitre
+            width={40}
+            height={40}
+      />
       </div>
       <div className="mt-6 text-2xl font-normal">
       <p>Modalités de subvention</p>
@@ -125,7 +135,8 @@ export default function RechercheFuiteCards() {
       <p>50 % des dépenses éligibles et 2 000 euros de subvention maximum.</p>
       </div>
 <div className='text-center py-6'>
-      <Button/>
+<Button>Plus d&apos;information</Button>
+
 
 </div>
       </div> 
