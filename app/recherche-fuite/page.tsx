@@ -51,9 +51,21 @@ export default function page() {
     <div className='flex flex-col lg:flex-row items-center gap-6 pt-8'>
     <h2 className='text-2xl md:text-3xl font-bold'>Quel <span className="text-[#76A042]">type</span> de fuite rencontrez-vous ?</h2>
     <div className='flex gap-8 px-0 lg:px-20'>    
-        <Button className='bg-[#76A042] hover:bg-[#76A042] hover:bg-opacity-90 text-[#10263E]'>Après compteur</Button>
-        <Button className='bg-[#76A042] hover:bg-[#76A042] hover:bg-opacity-90 text-[#10263E]'>dégâts des eaux</Button>
-        <Button className='bg-[#76A042] hover:bg-[#76A042] hover:bg-opacity-90 text-[#10263E]'>Toiture</Button>
+<Link
+href="/recherche-fuite/compteur"
+>
+<Button className='bg-[#76A042] hover:bg-[#76A042] hover:bg-opacity-90 text-[#10263E]'>Après compteur</Button>
+</Link>
+<Link
+href="/recherche-fuite/degats-des-eaux"
+>
+<Button className='bg-[#76A042] hover:bg-[#76A042] hover:bg-opacity-90 text-[#10263E]'>dégâts des eaux</Button>
+</Link>
+<Link
+href="/recherche-fuite/toiture"
+>
+<Button className='bg-[#76A042] hover:bg-[#76A042] hover:bg-opacity-90 text-[#10263E]'>Toiture</Button>
+</Link>
     </div>
     </div>
     

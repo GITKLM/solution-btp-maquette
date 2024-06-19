@@ -82,7 +82,7 @@ export default function NavBar() {
               <Button
               
               >
-                 <a href="/contact" className="">Devis gratuit</a>
+                 <Link href="/contact" className="">Devis gratuit</Link>
               
               </Button>
             </li>

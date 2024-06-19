@@ -16,10 +16,10 @@ const Carousel = () => {
   ];
 
   const buttons = [
-    <Button key="fuite" className="absolute bottom-5 left-1/2 transform -translate-x-1/2 bg-[#76A042] opacity-70 hover:opacity-100 text-white py-2 px-4 rounded">Recherche de fuite</Button>,
-    <Button key="toiture" className="absolute bottom-5 left-1/2 transform -translate-x-1/2 bg-[#76A042] opacity-70 hover:opacity-100 text-white py-2 px-4 rounded">Travaux toiture</Button>,
-    <Button key="sinistre" className="absolute bottom-5 left-1/2 transform -translate-x-1/2 bg-[#76A042] opacity-70 hover:opacity-100 text-white py-2 px-4 rounded">Travaux après sinistre</Button>,
-    <Button key="facade" className="absolute bottom-5 left-1/2 transform -translate-x-1/2 bg-[#76A042] opacity-70 hover:opacity-100 text-white py-2 px-4 rounded">Ravalement de façade</Button>,
+    <Button key="fuite" className="ease-in-out absolute bottom-5 left-1/2 transform -translate-x-1/2 bg-[#76A042] opacity-70 hover:opacity-100 text-white py-2 px-4 rounded">Recherche de fuite</Button>,
+    <Button key="toiture" className="ease-in-out absolute bottom-5 left-1/2 transform -translate-x-1/2 bg-[#76A042] opacity-70 hover:opacity-100 text-white py-2 px-4 rounded">Travaux toiture</Button>,
+    <Button key="sinistre" className="ease-in-out absolute bottom-5 left-1/2 transform -translate-x-1/2 bg-[#76A042] opacity-70 hover:opacity-100 text-white py-2 px-4 rounded">Travaux après sinistre</Button>,
+    <Button key="facade" className="ease-in-out absolute bottom-5 left-1/2 transform -translate-x-1/2 bg-[#76A042] opacity-70 hover:opacity-100 text-white py-2 px-4 rounded">Ravalement de façade</Button>,
   ];
 
   const goToNextSlide = () => {

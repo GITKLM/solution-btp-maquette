@@ -96,7 +96,7 @@ export default function Expertise() {
             "Travaux après sinistre",
             "Ravalement de façade"
           ]}
-          linkHref="/offres"
+          linkHref="/autres-travaux"
           reverseLayout={false}
         />
       </Bounded>

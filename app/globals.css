@@ -97,7 +97,7 @@
 }
 
 .glass-container::before {
-  @apply absolute -inset-[10px] -z-10 rounded-xl border border-slate-200/10 bg-slate-300/20 backdrop-blur-md;
+  @apply absolute -inset-[10px] -z-10 rounded-xl border border-slate-300/10 bg-slate-400/20 backdrop-blur-md;
   content: "";
 }
 

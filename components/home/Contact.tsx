@@ -1,11 +1,12 @@
 import React from 'react'
 import { Button } from '../ui/button'
 import Image from 'next/image'
-import { Link } from 'lucide-react'
+
 import LogoSansTitre from '../LogoSansTitre'
 import Bounded from '../Bounded'
 import { IoIosMail, IoIosPhonePortrait } from 'react-icons/io'
 import { FaHome } from 'react-icons/fa'
+import Link from 'next/link'
 
 export default function Contact() {
   return (
@@ -29,34 +30,38 @@ export default function Contact() {
 </div>
   <div className="mt-6 text-2xl font-normal">
   </div>
-  <div className="mt-4 max-w-x prose prose-invert text-xl">
+  <div className="mt-4 max-w-x prose prose-invert text-2xl">
 <IoIosPhonePortrait />
-      <p className='mb-2 pt-2 pl-4'>06 93 63 70 95</p>
+      <p className='mb-2 pt-2 p-4'>06 93 63 70 95</p>
     <IoIosMail />
-      <p className='mb-2 pt-2 pl-4'>solution.btp@outlook.fr</p>
+      <p className='mb-2 pt-2 p-4'>solution.btp@outlook.fr</p>
       <FaHome />
-      <p className='mb-2 pt-2 pl-4'>
+      <p className='mb-2 pt-2 p-4'>
 
 4 Avenue du Père René Payet 97450 Saint-Louis 
 </p>    
       <h3 className='font-bold mt-8'>Nos horaires</h3>
-    <div className='flex text-xl justify-center items-center'>
+    <div className='text-2xl justify-center items-center'>
     <p className='mt-4'>lun - ven</p>
-        <p className='mb-2 p-3'>07:00 à 19:00</p>
+        <p className='mb-2 p-4'>07:00 à 19:00</p>
         <p className=''>sam - dim</p>
-        <p className='mb-2 p-3'>fermé</p> 
+        <p className='mb-2 p-4'>fermé</p> 
       </div> 
         </div>
-{/* <div className='text-center py-6'>
-<Button>Contactez-nous</Button>
+<div className='sm:text-center py-6'>
+<Link
+href="/contact"
+className=''
+>
+<Button>Rendez-vous en ligne</Button>
+</Link>
 
-
-</div> */}
+</div>
   </div> 
 
   <Image
-src="/test.jpg"
-alt="test"
+src="/contact.png"
+alt="Une personne sur un toit face à une énorme fuite d'eau"
 className="opacity-90 shadow-2xl lg:col-span-2 lg:pt-0  lg:translate-x-[15%] rounded-lg"
 width={690}
 height={500}
