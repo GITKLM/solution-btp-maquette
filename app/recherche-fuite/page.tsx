@@ -62,9 +62,9 @@ export default function page() {
         />
     </div>
 
-    <div className='flex flex-col lg:flex-row items-center gap-6 pt-8'>
-    <h2 className='text-2xl md:text-3xl font-bold'>Quel <span className="text-[#76A042]">type</span> de fuite rencontrez-vous ?</h2>
-    <div className='flex gap-8 px-0 lg:px-20'>    
+    <div className='flex flex-col lg:flex-row items-center gap-8 pt-8'>
+    <h2 className='text-2xl md:text-3xl text-center font-bold'>Quel est le <span className="text-[#76A042]">type</span> de fuite que vous rencontrez?</h2>
+    <div className='flex flex-col md:flex-row gap-4 px-0 lg:px-20'>    
 <Link
 href="/recherche-fuite/compteur"
 >
@@ -78,7 +78,7 @@ href="/recherche-fuite/degats-des-eaux"
 <Link
 href="/recherche-fuite/toiture"
 >
-<Button className='bg-[#76A042] hover:bg-[#76A042] hover:bg-opacity-90 text-[#10263E]'>Toiture</Button>
+<Button className='bg-[#76A042] hover:bg-[#76A042] hover:bg-opacity-90 text-[#10263E]'>Depuis votre toit</Button>
 </Link>
     </div>
     </div>

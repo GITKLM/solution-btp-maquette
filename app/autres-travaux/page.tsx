@@ -18,7 +18,7 @@ export default function page() {
           className='pointer max-w-6 text-lg'
           ><IoHomeOutline /></Link>
         <p className="text-sm text-[#76A042]">Notre solution</p>
-        <h1 className="text-6xl font-bold">
+        <h1 className="text-5xl font-bold">
         Besoin de travaux <span className="text-[#76A042]">spécifiques </span> ?
         </h1>
         <p className="max-w-[33rem] pb-2">
@@ -63,8 +63,9 @@ export default function page() {
     </div>
 
     <div className='flex flex-col lg:flex-row items-center gap-6 pt-8'>
-    <h2 className='text-2xl md:text-3xl font-bold'>Retrouver nos autres <span className="text-[#76A042]">expertises </span> ici :</h2>
-    <div className='flex gap-8 px-0 lg:px-20'>    
+      
+    <h2 className='text-2xl md:text-3xl text-center font-bold'>Retrouver nos autres <span className="text-[#76A042]">expertises </span> ici :</h2>
+    <div className='flex flex-col md:flex-row gap-4 px-0 lg:px-20'>   
 <Link
 href="/autres-travaux/apres-sinistre"
 >

@@ -62,23 +62,23 @@ export default function page() {
         />
     </div>
 
-    <div className='flex flex-col lg:flex-row items-center gap-6 pt-8'>
-    <h2 className='text-2xl md:text-3xl font-bold'>Notre  <span className="text-[#76A042]">expertise </span> toiture pour vous : </h2>
-    <div className='flex gap-8 px-0 lg:px-20'>    
+    <div className='flex flex-col lg:flex-row items-center gap-6 pt-8'>  
+    <h2 className='text-2xl md:text-3xl text-center font-bold'>Notre  <span className="text-[#76A042]">expertise </span> toiture pour vous : </h2>
+    <div className='flex flex-col md:flex-row gap-4 px-0 lg:px-20'>   
 <Link
 href="/travaux-toiture/etencheite"
 >
-<Button className='bg-[#76A042] hover:bg-[#76A042] hover:bg-opacity-90 text-[#10263E]'>Etenchéité</Button>
+<Button className='bg-[#76A042] hover:bg-[#76A042] hover:bg-opacity-90 text-[#10263E] min-w-[105px]'>Etenchéité</Button>
 </Link>
 <Link
 href="/travaux-toiture/peinture"
 >
-<Button className='bg-[#76A042] hover:bg-[#76A042] hover:bg-opacity-90 text-[#10263E]'>Peinture</Button>
+<Button className='bg-[#76A042] hover:bg-[#76A042] hover:bg-opacity-90 text-[#10263E] min-w-[105px]'>Peinture  </Button>
 </Link>
 <Link
 href="/travaux-toiture/nettoyage"
 >
-<Button className='bg-[#76A042] hover:bg-[#76A042] hover:bg-opacity-90 text-[#10263E]'>Nettoyage</Button>
+<Button className='bg-[#76A042] hover:bg-[#76A042] hover:bg-opacity-90 text-[#10263E] min-w-[105px]'>Nettoyage</Button>
 </Link>
     </div>
     </div>

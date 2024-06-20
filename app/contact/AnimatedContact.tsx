@@ -9,7 +9,7 @@ type ContactItem =
   | { type: 'email', value: string }
   | { type: 'phone', value: string }
   | { type: 'address', value: string }
-  | { type: 'social', name: string, url: string };
+  | { type: 'horaire', name: string };
 
 interface ContactSection {
   title: string;
@@ -34,9 +34,8 @@ export default function AnimationDevis() {
     {
       title: "Horaires",
       items: [
-        { type: "social", name: "Instagram", url: "https://instagram.com" },
-        { type: "social", name: "Facebook", url: "https://facebook.com" },
-        { type: "social", name: "Twitter", url: "https://twitter.com" }
+        { type: "horaire", name: "lun - ven: 07h - 19h" },
+        { type: "horaire", name: "sam - dim: fermé" },
       ]
     }
   ];
@@ -61,11 +60,10 @@ export default function AnimationDevis() {
 
   return (
     <div className="container mx-auto px-4" ref={container}>
-      <h1 className="devis__heading opacity-0 text-balance text-center text-5xl font-medium md:text-7xl pt-10 pb-20 ">Quelle est votre demande ?</h1>
+      <h1 className="devis__heading opacity-0 text-balance text-center text-5xl font-medium md:text-7xl pt-10 pb-20">Quelle est votre demande ?</h1>
       
       <div className='lg:grid grid-cols-4 block'>
         <ContactForm />
-
 
         <div className="col-span-1 py-8 devis__contact opacity-0">
           {contactInfo.map((section, index) => (
@@ -85,9 +83,9 @@ export default function AnimationDevis() {
                     return (
                       <a key={itemIndex} href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(item.value)}`} target="_blank" rel="noopener noreferrer" className="text-xl font-bold mb-4 block transform transition-transform duration-300 ease-in-out hover:scale-105 pl-2">{item.value}</a>
                     );
-                  case "social":
+                  case "horaire":
                     return (
-                      <a key={itemIndex} href={item.url} target="_blank" rel="noopener noreferrer" className="text-xl font-bold mb-4 block transform transition-transform duration-300 ease-in-out hover:scale-105 pl-2">{item.name}</a>
+                      <div key={itemIndex} className="text-xl font-bold mb-4 block transform transition-transform duration-300 ease-in-out hover:scale-105 pl-2">{item.name}</div>
                     );
                   default:
                     return null;

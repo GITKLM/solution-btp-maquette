@@ -4,7 +4,6 @@ import Image from 'next/image';
 import LogoSansTitre from '@/components/LogoSansTitre';
 import Link from 'next/link';
 import { IoHomeOutline } from 'react-icons/io5';
-import { MdOutlineWaterDrop } from "react-icons/md";
 
 type SkeletonProps = {
     title: string;
@@ -39,7 +38,7 @@ const Skeleton: React.FC<SkeletonProps> = ({
 }) => {
     return (
         <Bounded className="relative">
-            <h3 className="text-balance text-center text-7xl mb-20 font-bold md:text-5xl">
+            <h3 className="text-balance text-center mb-20 font-bold text-5xl">
                 {title}
             </h3>
             <div className="grid mt-16 items-center rounded-xl border border-blue-50 bg-gradient-to-b from-[#76A042]/25 to-[#76A042]/35 px-8 py-8 backdrop-blur-sm lg:grid-cols-3 lg:py-12">
@@ -84,7 +83,7 @@ const Skeleton: React.FC<SkeletonProps> = ({
                 />
             </div>
 
-            <div className="flex flex-row justify-between gap-6 mt-4">
+            <div className="flex flex-col md:flex-row justify-between gap-6 mt-4">
                 {buttonText1 && buttonHref1 && (
                     <Link href={buttonHref1}>
                         <Button className='bg-[#76A042] hover:bg-[#76A042] hover:bg-opacity-90 text-[#10263E]'>{buttonText1}</Button>

@@ -61,7 +61,7 @@ className=''
   </div> 
 
   <Image
-src="/contact.png"
+src="/contact.webp"
 alt="Une personne sur un toit face à une énorme fuite d'eau"
 className="opacity-90 shadow-2xl lg:col-span-2 lg:pt-0  lg:translate-x-[15%] rounded-lg"
 width={690}

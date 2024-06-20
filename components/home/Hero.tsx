@@ -65,7 +65,7 @@ export default function Hero() {
         </div>
         <Carousel />
       </div>
-      <div className="px-2 py-2 mt-4 flex justify-between gap-6 text-xs md:text-lg font-bold">
+      <div className="px-2 py-2 mt-4 flex justify-between gap-4 sm:gap-6 text-xs md:text-lg font-bold">
         <Feature Icon={GiReceiveMoney} text="Agréée par les assurances" />
         <Feature Icon={TfiWrite} text="Devis rapide" />
         <Feature Icon={ImHappy} text="Client satisfait" />
