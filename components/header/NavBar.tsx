@@ -82,7 +82,7 @@ export default function NavBar() {
               <Button
               
               >
-                 <Link href="/contact" className="">Devis gratuit</Link>
+                 <Link href="/contact" className="">Contactez-nous</Link>
               
               </Button>
             </li>
