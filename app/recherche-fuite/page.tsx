@@ -25,13 +25,27 @@ export default function page() {
         Une surconsommation d&apos;eau ? Des traces d&apos;infiltration au plafond ? peinture qui cloque ? Dégats des eaux ? Solution BTP enquête et résout tout vos problème de fuite. Nous nous déplaçons rapidement dans l&apos;ouest et le sud de la Réunion. Entreprise agréée par les Assurances
         </p>
         <div className='flex items-center'>
-        <Button>Prendre Rendez-vous</Button>
+        <Button>
+              <Link href="/contact" className="">Prendre Rendez-vous</Link>
+            </Button>
         <div className="flex gap-2 px-4 py-2">
           <div className="flex gap-1 items-center text-4xl p-1 hover:bg-[#76A042] hover:bg-opacity-25 rounded">
-            <IoIosPhonePortrait />
+          <Link
+              href={`tel:0693637095`} 
+              target="_blank" 
+              rel="noopener noreferrer"
+              >
+              <IoIosPhonePortrait />
+          </Link>
           </div>
           <div className="items-center flex gap-1 text-4xl p-1 hover:bg-[#76A042] hover:bg-opacity-25 rounded">
+          <Link
+              href={`mailto:solution.btp@outlook.fr`} 
+              target="_blank" 
+              rel="noopener noreferrer"
+         >
             <IoIosMail />
+         </Link>
           </div>
         </div>
         </div>

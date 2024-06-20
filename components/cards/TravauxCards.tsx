@@ -21,17 +21,17 @@ const TravauxCard: Card[] = [
     title: 'Travaux après sinistre',
     subtitle: "Une surconsommation, des factures trop élevées ?",
     description: "Une surconsommation, des factures trop élevées ?",
-    image: '/fuite/fuite-compteur.jpg',
-    alt: "Détection après compteur",
-    href: "/recherche-fuite/compteur",
+    image: '/autres-travaux/autres-travaux-sinistre.png',
+    alt: "Travaux après sinistre",
+    href: "/autres-travaux/apres-sinistre",
   },
   {
     title: 'Ravalement de façade',
     subtitle: "De chez vous ou de chez votre voisin ? Nous déterminons les causes cachées",
     description: "Une surconsommation, des factures trop élevées ?",
-    image: '/fuite/fuite-degats.png',
-    alt: "dégats des eaux",
-    href: "/recherche-fuite/degats-des-eaux",
+    image: '/autres-travaux/autres-travaux-ravalement.png',
+    alt: "Ravalement de façade",
+    href: "/autres-travaux/ravalement-facade",
   },
 ];
 

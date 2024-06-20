@@ -14,6 +14,7 @@ export default function Contact() {
     className="relative bg-[#76A042]/10"
 
     >
+<h4 className="text-balance text-center text-5xl font-medium md:text-7xl pb-4">Nous contacter</h4>
 
 <div className="grid mt-16 items-center rounded-xl border border-blue-50 bg-gradient-to-b from-[#76A042]/25 to-[#76A042]/35 px-8 py-8 backdrop-blur-sm lg:grid-cols-3 lg:py-12">
 

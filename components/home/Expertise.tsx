@@ -62,14 +62,14 @@ export default function Expertise() {
         <SectionWithImageAndText
           title="Recherche de"
           gradientText="fuite"
-          imageSrc="/expertise-recherche-fuite.jpg"
+          imageSrc="/expertise-recherche-fuite.png"
           altText="De beaux designs affichés sur un ordinateur"
           text={[
             "Problème de compteur",
             "Dégâts des eaux",
             "Notre spécialité: toiture-terrasse",
           ]}
-          linkHref="/recherche-de-fuite"
+          linkHref="/recherche-fuite"
           reverseLayout={false}
         />
   
@@ -83,7 +83,7 @@ export default function Expertise() {
             "Peinture",
             "Nettoyage"
           ]}
-          linkHref="/toiture"
+          linkHref="/travaux-toiture"
           reverseLayout={true}
         />
   
