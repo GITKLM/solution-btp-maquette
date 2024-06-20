@@ -4,7 +4,7 @@ import { Button } from '@/components/ui/button';
 import Image from 'next/image';
 import { IoHomeOutline } from "react-icons/io5";
 import Link from 'next/link';
-import RechercheFuiteCards from '@/components/recherche-fuite/RechercheFuiteCards';
+import ToitureCards from '@/components/cards/ToitureCards';
 
 export default function page() {
   return (
@@ -40,10 +40,10 @@ export default function page() {
       </div>
     
       <Image
-          src="/test.jpg"
-          alt={`Image de test`}
-          width={600}
-          height={1000}
+          src="/toiture/toit.png"
+          alt={`Professionnel qui travail sur un toit`}
+          width={1100}
+          height={400}
           className="rounded-2xl object-cover opacity-85"
         />
     </div>
@@ -71,9 +71,9 @@ href="/travaux-toiture/nettoyage"
     
 
     </Bounded>
-    {/* <Bounded>
-    <RechercheFuiteCards />
-    </Bounded> */}
+   <Bounded>
+    <ToitureCards />
+    </Bounded>
             </>
     
   )

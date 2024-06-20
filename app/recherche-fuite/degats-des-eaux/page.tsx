@@ -1,4 +1,5 @@
 import Skeleton from '@/components/Skeleton';
+import { MdOutlineWaterDrop } from 'react-icons/md';
 
 const Page = () => {
     return (
@@ -15,6 +16,7 @@ const Page = () => {
             paragraph1="Surconsommation d'eau, compteur qui tourne en permanence, de l'eau sur votre sol en extérieur"
             h32="Nous pouvons vous aider"
             paragraph2="Nous détectons et agissons rapidement contre toute cause de fuite"
+            IconComponent={MdOutlineWaterDrop}
         />
     );
 };

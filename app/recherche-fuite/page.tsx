@@ -4,7 +4,7 @@ import { Button } from '@/components/ui/button';
 import Image from 'next/image';
 import { IoHomeOutline } from "react-icons/io5";
 import Link from 'next/link';
-import RechercheFuiteCards from '@/components/recherche-fuite/RechercheFuiteCards';
+import RechercheFuiteCards from '@/components/cards/RechercheFuiteCards';
 
 export default function page() {
   return (

@@ -10,22 +10,23 @@ type SkeletonProps = {
     title: string;
     imageSrc: string;
     imageAlt: string;
-    IconHref: string;
-    buttonText1: string;
-    buttonHref1: string;
+    IconHref?: string;
+    buttonText1?: string;
+    buttonHref1?: string;
     buttonText2: string;
     buttonHref2: string;
     h31: string;
     h32: string;
     paragraph1: string;
     paragraph2: string;
+    IconComponent?: React.ElementType;
 };
 
 const Skeleton: React.FC<SkeletonProps> = ({
     title,
     imageSrc,
     imageAlt,
- 
+    IconComponent,
     IconHref,
     buttonText1,
     buttonHref1,
@@ -48,9 +49,11 @@ const Skeleton: React.FC<SkeletonProps> = ({
                             <IoHomeOutline />
                         </Link>
                         <span className="text-[#76A042] font-semibold">/</span>
-                        <Link href={IconHref} className="pointer max-w-6 text-lg">
-                            <MdOutlineWaterDrop />
-                        </Link>
+                        {IconComponent && IconHref && (
+                            <Link href={IconHref} className="pointer max-w-6 text-lg">
+                                <IconComponent />
+                            </Link>
+                        )}
                     </div>
                     <div className="w-fit rounded-lg bg-gray-500/10 p-4 text-xl lg:text-3xl">
                         <LogoSansTitre width={60} height={60} />
@@ -65,11 +68,9 @@ const Skeleton: React.FC<SkeletonProps> = ({
                         <p>{paragraph2}</p>
                     </div>
                     <div className="text-center py-6">
-                 <Link
-                 href="/contact"
-                 >
-                 <Button>Contactez-nous</Button>
-                 </Link>
+                        <Link href="/contact">
+                            <Button>Contactez-nous</Button>
+                        </Link>
                     </div>
                 </div>
 
@@ -84,9 +85,11 @@ const Skeleton: React.FC<SkeletonProps> = ({
             </div>
 
             <div className="flex flex-row justify-between gap-6 mt-4">
-                <Link href={buttonHref1}>
-                    <Button className='bg-[#76A042] hover:bg-[#76A042] hover:bg-opacity-90 text-[#10263E]'>{buttonText1}</Button>
-                </Link>
+                {buttonText1 && buttonHref1 && (
+                    <Link href={buttonHref1}>
+                        <Button className='bg-[#76A042] hover:bg-[#76A042] hover:bg-opacity-90 text-[#10263E]'>{buttonText1}</Button>
+                    </Link>
+                )}
                 <Link href={buttonHref2}>
                     <Button className='bg-[#76A042] hover:bg-[#76A042] hover:bg-opacity-90 text-[#10263E]'>{buttonText2}</Button>
                 </Link>

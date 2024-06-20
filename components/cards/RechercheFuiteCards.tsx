@@ -13,7 +13,7 @@ interface Card {
   description: string;
   image: string;
   alt: string;
-  href?: HrefType; // Use the defined HrefType
+  href?: HrefType;
 }
 
 const rechercheFuiteCard: Card[] = [
@@ -39,7 +39,7 @@ const rechercheFuiteCard: Card[] = [
     description: "Une surconsommation, des factures trop élevées ?",
     image: '/fuite/fuite-toit.png',
     alt: "Fuite toit-terrasse",
-    href: "/recherche-fuite/toit-terrasse", // Another valid URL
+    href: "/recherche-fuite/toit-terrasse",
   },
 ];
 
