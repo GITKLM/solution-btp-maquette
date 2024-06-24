@@ -6,15 +6,14 @@ import Technologie from "@/components/home/Technologie";
 
 export default function Home() {
   return (
-    <main>
-<div >
+    <main >
+
 <Hero />
 <Expertise />
 <Deplacement/>
 <Technologie />
 <Contact />
 
-</div>
     </main>
   );
 }

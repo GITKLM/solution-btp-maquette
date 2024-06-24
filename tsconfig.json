@@ -21,6 +21,6 @@
       "@/*": ["./*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "components/home/Deplacement.js", "components/OpenStreetMap.js"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "components/home/Deplacement.js", "components/OpenStreetMap.js", "util/Helper.jsx"],
   "exclude": ["node_modules"]
 }

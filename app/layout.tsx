@@ -4,6 +4,7 @@ import "./globals.css";
 import { cn } from "@/lib/utils";
 import Header from "@/components/header/Header";
 import Footer from "@/components/footer/Footer";
+import CookieBanner from "@/components/CookieBanner";
 
 const fontSans = FontSans({
   subsets: ["latin"],
@@ -29,6 +30,7 @@ export default function RootLayout({
               )}>
                 <Header />
                 {children}
+                <CookieBanner />
                 <Footer />
       </body>
     </html>
